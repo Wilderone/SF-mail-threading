@@ -1,0 +1,10 @@
+<ul id='emails'>
+    {% for email in emails %}
+
+    <li>Получатель: {{ email.reciever }}</li>
+    <li>Тема: {{ email.subject }}</li>
+    <li>Сообщение: {{ email.message }}</li>
+    <li>Таймер: {{ email.timer }}</li>
+    {% endfor %}
+</ul>
+<a href="/">На главную</a>
